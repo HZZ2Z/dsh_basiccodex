@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-nextstep",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Next-step prediction for DeepSeek Harness: after each turn, suggest the user's next message in a bar above the composer. Tab accepts into the draft without sending.",
   "license": "MIT",
   "author": "HZZ2Z",

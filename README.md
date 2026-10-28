@@ -101,3 +101,8 @@ cd C:\Users\22516\Desktop\dsh_nextStep\plugin
 - 工具消息会被过滤出预测上下文，避免 provider 因缺 tool schema 拒绝请求；这会牺牲一部分工具结果上下文。
 - 建议是单条、整句；多候选、换一条、接受率埋点属于形态 B/C。
 - 客户端类型来自 npm 的 `@deepseek-ai/dsh-client-ui-*@0.2.1-rc.3`；本包不依赖构建期类型。
+
+## 变更记录
+
+- `0.1.1`：修复 ghost 在窗口 resize、新建议替换旧建议或切换 session 后跳到输入框上方的问题。定位改为相对 `data-composer-overlay` 锚点测量，输入框限定在 `data-composer-card` 内查找，并用 `ResizeObserver` 跟随 composer 布局变化。
+- `0.1.0`：首个可用版本。
