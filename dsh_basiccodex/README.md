@@ -14,7 +14,7 @@ Add the package as a `link:` dependency of a profile and append it to that profi
 ```json
 {
   "dependencies": {
-    "dsh-basiccodex": "link:C:/Users/22516/Desktop/dsh_nextStep/plugin/dsh_basiccodex"
+    "dsh-basiccodex": "link:C:/Users/22516/Desktop/dsh_nextStep/dsh_basiccodex_repo/dsh_basiccodex"
   },
   "dsh": {
     "profile": {
@@ -68,7 +68,7 @@ The package declares both `dsh.bundle.patch` and `dsh.client`, so one row insert
 ## Tests
 
 ```powershell
-cd plugin/dsh_basiccodex
+cd dsh_basiccodex_repo/dsh_basiccodex
 node test/nextstep-host.test.mjs
 node test/pause-host.test.mjs
 ```
