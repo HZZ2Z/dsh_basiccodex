@@ -6,11 +6,11 @@
   "author": "HZZ2Z",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HZZ2Z/dsh_nextStep.git"
+    "url": "git+https://github.com/HZZ2Z/dsh_basiccodex.git"
   },
-  "homepage": "https://github.com/HZZ2Z/dsh_nextStep#readme",
+  "homepage": "https://github.com/HZZ2Z/dsh_basiccodex#readme",
   "bugs": {
-    "url": "https://github.com/HZZ2Z/dsh_nextStep/issues"
+    "url": "https://github.com/HZZ2Z/dsh_basiccodex/issues"
   },
   "keywords": [
     "dsh-plugin",
