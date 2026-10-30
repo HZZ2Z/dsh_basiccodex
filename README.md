@@ -1,3 +1,7 @@
+> **New combined project:** `dsh_basiccodex/` merges this next-step plugin and the
+> session pause/continue plugin into one package (`dsh-basiccodex`). Profiles should
+> use `dsh-basiccodex`; this package remains for history.
+
 # dsh-plugin-nextstep
 
 Next-step prediction for DeepSeek Harness（输入框「下一步建议」）——Codex Composer Predictions 的最小可用形态 A。

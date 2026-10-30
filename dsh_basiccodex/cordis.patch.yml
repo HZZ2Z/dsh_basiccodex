@@ -1,0 +1,24 @@
+# dsh-basiccodex bundle: one host row carries both feature halves.
+# `nextstep` — after a turn, suggest the user's next message (Tab accepts).
+# `pause`    — stop a turn into a pause; the original stop button pauses and the
+#              original send button shows a play-triangle continue control.
+- insert:
+    - id: basiccodex
+      name: dsh-basiccodex
+      config:
+        nextstep:
+          enabled: true
+          provider: ''
+          model: ''
+          contextMessages: 12
+          maxContextChars: 24000
+          maxTokens: 512
+          temperature: 0
+          timeoutMs: 60000
+          sampleRate: 1
+          minTurn: 1
+        pause:
+          autoContinueOnResume: false
+          autoResumeOnStartup: false
+          continuationDelayMs: 1500
+          storeSubdir: session-pause

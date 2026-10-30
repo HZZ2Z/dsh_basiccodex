@@ -1,0 +1,66 @@
+{
+  "name": "dsh-basiccodex",
+  "version": "0.1.0",
+  "description": "Codex-like basics for DeepSeek Harness: next-message prediction and session pause/continue in one plugin bundle.",
+  "license": "MIT",
+  "author": "HZZ2Z",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HZZ2Z/dsh_nextStep.git"
+  },
+  "homepage": "https://github.com/HZZ2Z/dsh_nextStep#readme",
+  "bugs": {
+    "url": "https://github.com/HZZ2Z/dsh_nextStep/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "basiccodex",
+    "next-step",
+    "prediction",
+    "session-pause",
+    "continue"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/nextstep.js",
+    "lib/pause.js",
+    "lib/core-events.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/nextstep-host.test.mjs && node test/pause-host.test.mjs && node test/client.test.mjs"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-atomic-write": ">=0.2.0-rc.2 <0.3.0",
+    "@deepseek-ai/dsh-commands": ">=0.2.0-rc.2 <0.3.0",
+    "@deepseek-ai/dsh-home-paths": ">=0.2.0-rc.2 <0.3.0",
+    "@deepseek-ai/dsh-llm": ">=0.2.0-rc.2 <0.3.0",
+    "@deepseek-ai/dsh-session": ">=0.2.0-rc.2 <0.3.0"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
