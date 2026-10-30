@@ -76,4 +76,4 @@ node test/pause-host.test.mjs
 ## Repository
 
 The package lives in the `dsh_nextStep` repository under `plugin/dsh_basiccodex/`.
-The legacy packages `plugin/` (nextstep) and `plugin-pause/` (session pause) remain in the repository for history; the profile uses `dsh-basiccodex`.
+The legacy `plugin/` (nextstep) package remains in the repository for history; the session-pause source was merged into this package. Profiles should use `dsh-basiccodex`.
